@@ -3,11 +3,54 @@
 <head>
 <meta charset="EUC-KR">
 <title>Insert title here</title>
-
+<style>
+	table {border:1px solid white;}
+table{
+		border-collapse: collapse;
+	}
+input{
+	font-size:20px;
+	color:white;
+	outline:none;
+	background-color:red;
+	border-radius: 10px;
+	font-weight: bold;
+}
+</style>
 <script>
 
 	function letter(){
-		document.getElementById("div").innerHTML= aver+"는 평균 미만입니다.";	
+		a1.innerHTML="<input type='button' value='유진아' onclick='letter2()' style='width:100px; height:100px;'>"
+	}
+	function letter2(){
+		a2.innerHTML="<input type='button' value='힘들지' onclick='letter3()' style='width:100px; height:100px;'>"
+	}
+	function letter3(){
+		a3.innerHTML="<input type='button' value='오늘도' onclick='letter4()' style='width:100px; height:100px;'>"
+	}
+	function letter4(){
+		a4.innerHTML="<input type='button' value='고생' onclick='letter5()' style='width:100px; height:100px;'>"
+	}
+	function letter5(){
+		a5.innerHTML="<input type='button' value='많았고' onclick='letter6()' style='width:100px; height:100px;'>"
+	}
+	function letter6(){
+		a6.innerHTML="<input type='button' value='난항상' onclick='letter7()' style='width:100px; height:100px;'>"
+	}
+	function letter7(){
+		a7.innerHTML="<input type='button' value='널위해' onclick='letter8()' style='width:100px; height:100px;'>"
+	}
+	function letter8(){
+		a8.innerHTML="<input type='button' value='기도해' onclick='letter9()' style='width:100px; height:100px;'>"
+	}
+	function letter9(){
+		a9.innerHTML="<input type='button' value='그러니' onclick='letter10()' style='width:100px; height:100px;'>"
+	}
+	function letter10(){
+		a10.innerHTML="<input type='button' value='힘내고' onclick='letter11()' style='width:100px; height:100px;'>"
+	}
+	function letter11(){
+		alert('사랑해 유진아')
 	}
 
 </script>
@@ -15,8 +58,45 @@
 
 <body>
 
-<input type="button" value="편지 읽기" onclick="letter()">  
+<input type="button" value="클릭" onclick="letter()" style="width:200px; height:200px;">  
 
-<div id="div"></div>
+
+<table width="500px" height="500px">
+	<tr>
+		<td width="100px" height="100px"></td>
+		<td id="a1"></td>
+		<td width="100px" height="100px"></td>
+		<td id="a9"></td>
+		<td width="100px" height="100px"></td>
+	</tr>
+	<tr>
+		<td id="a2"></td>
+		<td width="100px" height="100px"></td>
+		<td id="a10"></td>
+		<td width="100px" height="100px"></td>
+		<td id="a8"></td>
+	</tr>
+	<tr>
+		<td id="a3"></td>
+		<td width="100px" height="100px"></td>
+		<td width="100px" height="100px"></td>
+		<td width="100px" height="100px"></td>
+		<td id="a7"></td>
+	</tr>
+	<tr>
+		<td width="100px" height="100px"></td>
+		<td id="a4"></td>
+		<td width="100px" height="100px"></td>
+		<td id="a6"></td>
+		<td width="100px" height="100px"></td>
+	</tr>
+	<tr>
+		<td width="100px" height="100px"></td>
+		<td width="100px" height="100px"></td>
+		<td id="a5"></td>
+		<td width="100px" height="100px"></td>
+		<td width="100px" height="100px"></td>
+	</tr>
+</table>
 </body>
 </html>
